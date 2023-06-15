@@ -1,5 +1,5 @@
 <?php
-class exampleModel extends Model
+/*class exampleModel extends Model
 {
     public function __construct()
     {
