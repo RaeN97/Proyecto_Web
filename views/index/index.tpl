@@ -8,7 +8,7 @@
                 </div>
                 <div class="pie">
                     <p>Apple Iphone 14 (128GB)</p>
-                    <p>$ 1.159.990</p>
+                    <p>$ 999.990</p>
                 </div> 
             </div>
             <div class="galeria">

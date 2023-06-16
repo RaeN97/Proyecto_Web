@@ -4,12 +4,13 @@ namespace models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Articulo extends Model
+class Marca extends Model
 {
-    protected $table = 'articulos';
+    protected $table = 'marcas';
     protected $fillable = [];
-    public function marca()
+
+    public function articulos()
     {
-        return $this->belongsTo(Marca::class);
+        return $this->hasMany(Articulo::class);    
     }
 }

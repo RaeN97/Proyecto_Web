@@ -12,8 +12,12 @@ integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJ
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th>Codigo</th>
+                            <th>Id</th>
                             <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Marca</th>
+                            <th>Stock</th>
+                            <th>Precio</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -21,7 +25,11 @@ integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJ
                         {foreach from=$articulos item=model}
                             <tr>
                                 <td>{$model.id}</td>
-                                <td>{$model.Descripcion}</td>
+                                <td>{$model.nombre}</td>
+                                <td>{$model.descripcion}</td>
+                                <td>{$model.marca.nombre}</td>
+                                <td>{$model.stock}</td>
+                                <td>{$model.precio}</td>
                                 <td>
                                 <a href="{$_layoutParams.root}articulos/show/{$model.id}" class="btn btn-outline-primary btn-sm">Ver</a>
                                 <a href="{$_layoutParams.root}articulos/edit/{$model.id}" class="btn btn-outline-primary btn-sm">Editar</a>
